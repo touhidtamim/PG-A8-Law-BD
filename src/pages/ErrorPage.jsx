@@ -8,7 +8,7 @@ const ErrorPage = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-base-100 p-4">
-      <div className="card w-full max-w-md bg-base-200 shadow-xl">
+      <div className="card w-4/5 md:w-full max-w-md bg-base-200 shadow-xl">
         <div className="card-body items-center text-center">
          
           <div className="text-error mb-4">

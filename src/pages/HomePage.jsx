@@ -1,9 +1,12 @@
 import React from 'react';
+import Hero from '../components/hero'
+import SuccessCards from '../components/SuccessCards';
 
 const HomePage = () => {
   return (
     <div>
-      hello ami home page
+      <Hero/>
+      <SuccessCards/>
     </div>
   );
 };
