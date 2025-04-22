@@ -58,11 +58,11 @@ const Navbar = () => {
           <div className="menu p-4 w-full">
           <NavLink to="/"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl ' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'} >Home</NavLink>
 
-        <NavLink to="/Bookings"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'}   >My Bookings</NavLink>
+        <NavLink to="/bookings"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'}   >My Bookings</NavLink>
 
-        <NavLink to="/Blogs"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'} >Blogs</NavLink>
+        <NavLink to="/blogs"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'} >Blogs</NavLink>
 
-        <NavLink to="/Contact-us"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'}  >Contact Us</NavLink>
+        <NavLink to="/contact-us"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'}  >Contact Us</NavLink>
             <div className="mt-2"><button className="btn text-white px-6 py-2 bg-green-600  w-full">Contact Now</button></div>
           </div>
         </div>

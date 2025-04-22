@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Blogs = () => {
+const hero = () => {
   return (
     <div>
-      ami blogs
+      ami hero
     </div>
   );
 };
 
-export default Blogs;
+export default hero;

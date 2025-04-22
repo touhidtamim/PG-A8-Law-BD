@@ -1,20 +1,18 @@
 import React from 'react';
-import Navbar from './../components/Navbar';
-import { Outlet, useLocation, useRouteError } from 'react-router';
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { Outlet, useLocation } from 'react-router-dom';
 
 const Layout = () => {
   const location = useLocation();
-  const error = useRouteError();  
-  
-  const isErrorPage = !!error;
+  const isErrorPage = location.state?.isErrorPage;
 
   return (
     <div className='container mx-auto'>
-      <Navbar /> 
-      <main>
-      <Outlet />
-      </main> 
+      <Navbar />
+      <main className='min-h-[calc(100vh-332px)]'>
+        <Outlet />
+      </main>
       {!isErrorPage && <Footer />}
     </div>
   );
