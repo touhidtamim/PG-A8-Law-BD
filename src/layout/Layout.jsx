@@ -12,7 +12,9 @@ const Layout = () => {
   return (
     <div className='container mx-auto'>
       <Navbar /> 
-      <Outlet /> 
+      <main>
+      <Outlet />
+      </main> 
       {!isErrorPage && <Footer />}
     </div>
   );
