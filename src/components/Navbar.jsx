@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,22 +14,23 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Desktop Navigation - Center */}
+     
       <div className=" hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-2">
-          <li><a className="text-gray-700 hover:text-primary">Home</a></li>
-          <li><a className="text-gray-700 hover:text-primary">My-Bookings</a></li>
-          <li><a className="text-gray-700 hover:text-primary">Blogs</a></li>
-          <li><a className="text-gray-700 hover:text-primary">Contact Us</a></li>
-        </ul>
+        <div className="menu menu-horizontal px-1 gap-2 md:gap-6">
+        <NavLink to="/HomePage"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl ' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'} >Home</NavLink>
+        <NavLink to="/Bookings"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'}   >My-Bookings</NavLink>
+        <NavLink to="/Blogs"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'} >Blogs</NavLink>
+        <NavLink to="/Contact-us"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'}  >Contact Us</NavLink>
+
+        </div>
       </div>
 
-      {/* Right side - Contact Now button */}
+      
       <div className="flex-none hidden lg:block">
         <button className="btn text-white px-6 py-2 rounded-3xl bg-green-600">Contact Now</button>
       </div>
 
-      {/* Mobile hamburger menu */}
+     
       <div className="flex-none lg:hidden">
         <button 
           className="btn btn-square btn-ghost"
@@ -49,16 +52,16 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu dropdown */}
+     
       {isOpen && (
         <div className="lg:hidden absolute top-16 left-0 right-0 bg-base-100 shadow-md z-50">
-          <ul className="menu p-4 w-full">
-            <li><a className="text-gray-700">Home</a></li>
-            <li><a className="text-gray-700">My-Bookings</a></li>
-            <li><a className="text-gray-700">Blogs</a></li>
-            <li><a className="text-gray-700">Contact Us</a></li>
-            <li className="mt-2"><button className="btn text-white px-6 py-2 bg-green-600  w-full">Contact Now</button></li>
-          </ul>
+          <div className="menu p-4 w-full">
+          <NavLink to="/HomePage"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl ' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'} >Home</NavLink>
+        <NavLink to="/Bookings"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'}   >My-Bookings</NavLink>
+        <NavLink to="/Blogs"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'} >Blogs</NavLink>
+        <NavLink to="/Contact-us"  className={({ isActive }) => isActive ? 'text-indigo-600 font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl' : 'font-semibold text-md hover:bg-indigo-100 py-1 px-3 rounded-2xl'}  >Contact Us</NavLink>
+            <div className="mt-2"><button className="btn text-white px-6 py-2 bg-green-600  w-full">Contact Now</button></div>
+          </div>
         </div>
       )}
     </div>
