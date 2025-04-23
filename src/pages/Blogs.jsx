@@ -37,7 +37,7 @@ const Blog = () => {
       <h1 className="text-3xl font-bold mb-8 text-center">React Concepts Explained</h1>
       
       <div className="max-w-3xl mx-auto space-y-12">
-        {/* Blog Post 1 */}
+        
         <article className="bg-white rounded-lg shadow-md p-8">
           <h2 className="text-2xl font-bold mb-4">What is useState and how does it work in React?</h2>
           <div className="prose max-w-none">
@@ -79,7 +79,7 @@ function Counter() {
           </div>
         </article>
         
-        {/* Blog Post 2 */}
+       
         <article className="bg-white rounded-lg shadow-md p-8">
           <h2 className="text-2xl font-bold mb-4">What is the purpose of useEffect in React?</h2>
           <div className="prose max-w-none">
@@ -133,7 +133,7 @@ function UserProfile({ userId }) {
           </div>
         </article>
         
-        {/* Blog Post 3 */}
+        
         <article className="bg-white rounded-lg shadow-md p-8">
           <h2 className="text-2xl font-bold mb-4">What is a custom hook in React and when should you use one?</h2>
           <div className="prose max-w-none">
@@ -199,7 +199,7 @@ function ResponsiveComponent() {
           </div>
         </article>
         
-        {/* Blog Post 4 */}
+        
         <article className="bg-white rounded-lg shadow-md p-8">
           <h2 className="text-2xl font-bold mb-4">Difference between controlled and uncontrolled components. Which one is better?</h2>
           <div className="prose max-w-none">
@@ -298,7 +298,7 @@ function ResponsiveComponent() {
           </div>
         </article>
         
-        {/* Blog Post 5 */}
+       
         <article className="bg-white rounded-lg shadow-md p-8">
           <h2 className="text-2xl font-bold mb-4">Tell us something about useFormStatus() in React</h2>
           <div className="prose max-w-none">
@@ -366,7 +366,7 @@ function SignupForm() {
           </div>
         </article>
 
-        {/* Back to Top and Back to Home Buttons */}
+       
         <div className="flex justify-center gap-4 mt-12 pb-8">
           <button 
             onClick={scrollToTop}

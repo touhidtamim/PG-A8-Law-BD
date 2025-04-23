@@ -1,13 +1,16 @@
 import React from 'react';
 import { useRouteError, useNavigate } from 'react-router-dom';
 import { FaExclamationTriangle, FaHome } from 'react-icons/fa';
+import Navbar from '../components/Navbar';
 
 const ErrorPage = () => {
   const error = useRouteError();
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-base-100 p-4">
+    <>
+    <Navbar/>
+    <div className="min-h-[calc(100vh-72px)] flex items-center justify-center bg-base-100 p-4">
       <div className="card w-4/5 md:w-full max-w-md bg-base-200 shadow-xl">
         <div className="card-body items-center text-center">
          
@@ -51,6 +54,7 @@ const ErrorPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

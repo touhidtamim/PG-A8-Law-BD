@@ -6,6 +6,8 @@ import HomePage from '../pages/HomePage';
 import Bookings from '../pages/Bookings';
 import Blogs from '../pages/Blogs';
 import Contact from '../pages/ContactUS';
+import Spinner from '../components/spinner'
+import LawyerProfile from '../pages/LawyerProfile'
 
 
 export const router = createBrowserRouter([
@@ -29,7 +31,10 @@ export const router = createBrowserRouter([
       {
         path: '/Contact-us',
         Component: Contact,
-      }
+      },
+      { path: 'lawyer/:id', 
+        element: <LawyerProfile /> },
     ],
+    fallbackElement: <Spinner />
   },
 ]);
