@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="bg-black  text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center justify-center mb-6">
+        <div className="flex flex-col items-center justify-center mb-6 md:my-7">
           <Link to="/" className="flex items-center justify-center mb-4">
             <img src="/images/logo-footer.png" alt="Law.BD Logo" className="w-1/4 md:w-full" />
             <span className="ml-2 text-xl font-bold">Law.BD</span>

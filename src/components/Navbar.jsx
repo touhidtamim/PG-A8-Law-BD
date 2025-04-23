@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="navbar bg-base-100 flex justify-between px-4 py-3 lg:px-10 lg:py-4">
+    <div className="navbar bg-base-100 flex justify-between px-4 py-3">
       <div>
         <div className="flex items-center gap-1 md:gap-4">
           <img src='/images/logo.png' className='w-1/4 md:w-full ' />
