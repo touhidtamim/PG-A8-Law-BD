@@ -20,12 +20,12 @@ const LawyerDetails = () => {
   const handleShowAll = () => setShowAll(true);
   const handleShowLess = () => {
     setShowAll(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 600, behavior: 'smooth' });
   };
 
   return (
     <section className="py-16 bg-gray-50 container mx-auto">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-10">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Our Best Lawyers</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
