@@ -4,7 +4,7 @@ import SuccessCards from '../components/SuccessCards';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='container mx-auto ' >
       <Hero/>
       <SuccessCards/>
     </div>

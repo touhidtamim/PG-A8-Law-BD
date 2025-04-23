@@ -15,7 +15,7 @@ const hero = () => {
     <div className="max-w-md">
       <h1 className="mb-5  text-3xl md:text-5xl md:mb-8 font-bold">Legal Help at Your Fingertips</h1>
       <p className="mb-5">
-      We make finding and booking a lawyer easier than ever. <br /> Compare profiles, view availability, and book in just a few clicks.
+      We make finding and booking a lawyer easier than ever. Compare profiles, view availability, and book in just a few clicks.
       </p>
     </div>
   </div>
