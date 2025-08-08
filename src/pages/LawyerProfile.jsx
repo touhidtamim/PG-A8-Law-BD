@@ -85,7 +85,7 @@ const LawyerDetails = () => {
     const isAvailableToday = lawyer.availability.includes(today);
     
     return (
-      <div className="mt-8 bg-gradient-to-br from-green-50 via-purple-50 to-blue-50 shadow-md">
+      <div className="mt-8 rounded-2xl bg-gradient-to-br from-stone-50 via-slate-50 to-gray-100">
         <div className="p-8 my-7 border-b border-gray-200">
           <h2 className="text-2xl font-bold text-center">Book an Appointment</h2>
         </div>
@@ -146,18 +146,18 @@ const LawyerDetails = () => {
 
     return (
       <>
-              <div className="mb-8 hero rounded-2xl min-h-60 md:w-6/10 mx-8 mx-auto bg-gradient-to-br from-green-50 via-purple-50 to-blue-50">
+              <div className="mb-8 hero rounded-2xl min-h-60 md:w-6/10 mx-8 mx-auto bg-gradient-to-br from-stone-50 via-slate-50 to-gray-50">
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="text-4xl font-bold">Lawyer's Profile Details</h1>
-            <p className="py-6 mt-4 p-1 rounded-2xl bg-gradient-to-br from-indigo-100 via-purple-50 to-green-50 shadow-md font-semibold text-lg">
+            <p className="py-6 mt-4 p-1 rounded-2xl bg-gradient-to-br from-indigo-50 via-purple-50 to-indigo-50 shadow-md font-semibold text-lg">
               {lawyer.about || "Trusted legal expert offering smart solutions, strong advocacy, and clear guidance—committed to justice and client success."}
             </p>
           </div>
         </div>
       </div>
 
-        <div className="max-w-4xl mb-8 mx-auto px-4 py-8 bg-white rounded-lg shadow-md">
+        <div className="max-w-4xl mb-8 mx-auto px-4 py-8 bg-white rounded-lg ">
           <button
             onClick={() => navigate(-1)}
             className="mb-6 flex items-center text-blue-600 hover:text-blue-800 cursor-pointer"
@@ -168,7 +168,7 @@ const LawyerDetails = () => {
             Back to Results
           </button>
 
-          <div className="flex flex-col md:flex-row gap-8 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50  my-10">
+          <div className="flex flex-col md:flex-row gap-8 bg-gradient-to-br from-gray-50 via-purple-50 to-gray-50 rounded-2xl  my-10">
             <div className="w-full md:w-1/2">
               <img
                 src={lawyer.image || "https://via.placeholder.com/300x240"}
@@ -239,12 +239,12 @@ const LawyerDetails = () => {
     const lawyer = lawyers.find(l => l.id === parseInt(id));
     if (!lawyer) {
       return (
-        <div className="flex flex-col items-center justify-center h-screen">
+        <div className="flex flex-col items-center justify-center h-[70vh] bg-stone-50 rounded-2xl">
           <h2 className="text-2xl font-bold mb-4">Lawyer not found</h2>
           <p className="text-gray-600 mb-6">The lawyer you are looking for does not exist.</p>
           <button 
             onClick={() => navigate('/')} 
-            className="btn btn-primary"
+            className="btn btn-primary border-none bg-blue-600 text-white hover:bg-indigo-700"
           >
             Go to Homepage
           </button>

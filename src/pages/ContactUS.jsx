@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-gray-50 to-indigo-50 flex items-center justify-center p-6">
       <div className="w-full max-w-2xl bg-white shadow-lg rounded-xl p-8">
         <h2 className="text-3xl font-bold text-center text-indigo-600 mb-6">Contact Us</h2>
         <form className="space-y-6">

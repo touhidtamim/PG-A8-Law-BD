@@ -7,7 +7,7 @@ const lawyersData = [
     licenseNo: "BD 12345-234",
     image: "https://i.ibb.co.com/Zp5z7mbT/nussbaum-law-IOvs-EAEjn-DE-unsplash.jpg",
     fee: 2000,
-    availability: ["Sunday", "Monday", "Thursday"],
+    availability: ["Suaturday" ,"Sunday", "Monday", "Thursday"],
     appointmentCount: 127,
     about: "Afsana Rahman is known for her fearless approach in criminal defense cases. She ensures justice is served with integrity and determination."
   },
@@ -19,7 +19,7 @@ const lawyersData = [
     licenseNo: "BD 17345-234",
     image: "https://i.ibb.co.com/ZbFzHXk/cheerful-businessman-eyeglasses-office.jpg",
     fee: 2500,
-    availability: ["Monday", "Wednesday", "Friday"],
+    availability: ["Monday","Tuesday" , "Wednesday", "Friday"],
     appointmentCount: 987,
     about: "Rahat Chowdhury is a tech-savvy lawyer specializing in cyber law. He is passionate about protecting digital rights in the evolving digital age."
   },
@@ -31,7 +31,7 @@ const lawyersData = [
     licenseNo: "BD 22845-134",
     image: "https://i.ibb.co.com/pjtVhwNr/attractive-young-lawyer-in-office-business-man-and-lawyers-discussing-contract-papers-laptop-and-tab.jpg",
     fee: 3000,
-    availability: ["Sunday", "Tuesday", "Thursday"],
+    availability: ["Saturday","Sunday", "Tuesday", "Thursday", "Friday"],
     appointmentCount: 153,
     about: "With deep expertise in corporate mergers, Biplob helps companies make strategic legal moves with confidence and precision."
   },
@@ -43,7 +43,7 @@ const lawyersData = [
     licenseNo: "BD 17165-234",
     image: "https://i.ibb.co.com/2YCt797j/asian-lawyer-woman-working-with-a-laptop-computer-in-a-law-office-legal-and-legal-service-concept-ph.jpg",
     fee: 2700,
-    availability: ["Monday", "Wednesday", "Saturday"],
+    availability: ["Sunday","Monday", "Wednesday", "Saturday"],
     appointmentCount: 86,
     about: "Farzana Toma is dedicated to resolving sensitive family matters with compassion, care, and legal excellence."
   },
@@ -55,7 +55,7 @@ const lawyersData = [
     licenseNo: "BD 17345-234",
     image: "https://i.ibb.co.com/n5G7VKY/portrait-pensive-female-lawyer-her-table.webp",
     fee: 3200,
-    availability: ["Tuesday", "Thursday", "Saturday"],
+    availability: ["Tuesday","Wednesday", "Thursday", "Saturday"],
     appointmentCount: 112,
     about: "Nusrat Jahan fights for fair labor practices and protects employees' rights with commitment and legal sharpness."
   },
@@ -67,7 +67,7 @@ const lawyersData = [
     licenseNo: "BD 12845-194",
     image: "https://i.ibb.co.com/Df1YTzdK/Legal-Professional-Office-201712-002.jpg",
     fee: 2300,
-    availability: ["Sunday", "Tuesday", "Friday"],
+    availability: ["Sunday","Monday", "Tuesday", "thursday", "Friday"],
     appointmentCount: 74,
     about: "Md. Nayeem Ahsan brings clarity to complex property disputes, ensuring rightful ownership and resolution."
   },
