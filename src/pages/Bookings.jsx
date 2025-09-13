@@ -43,7 +43,7 @@ const Bookings = () => {
   const generateBellCurveData = () => {
     if (bookings.length === 0) return [];
 
-    const totalPoints = 300; // Total data points for smooth curves
+    const totalPoints = 300;
     const pointsPerLawyer = Math.floor(totalPoints / bookings.length);
     const spread = 25; // Controls the width of each curve
     let allData = [];
