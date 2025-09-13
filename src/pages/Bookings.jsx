@@ -40,7 +40,6 @@ const Bookings = () => {
     }, 100);
   };
 
-  // Generate bell curve data like in the image
   const generateBellCurveData = () => {
     if (bookings.length === 0) return [];
 
