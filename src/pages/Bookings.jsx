@@ -45,7 +45,7 @@ const Bookings = () => {
 
     const totalPoints = 300;
     const pointsPerLawyer = Math.floor(totalPoints / bookings.length);
-    const spread = 25; // Controls the width of each curve
+    const spread = 25;
     let allData = [];
 
     // Create one category per lawyer
