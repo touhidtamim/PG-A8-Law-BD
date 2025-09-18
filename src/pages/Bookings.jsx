@@ -144,7 +144,6 @@ const Bookings = () => {
                 <Tooltip
                   content={({ active, payload }) => {
                     if (active && payload && payload.length) {
-                      // Find non-zero values to display
                       const relevantData = payload.filter(
                         (p) => p.value > 0 && p.dataKey !== "x"
                       );
