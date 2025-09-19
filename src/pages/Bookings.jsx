@@ -48,7 +48,6 @@ const Bookings = () => {
     const spread = 25;
     let allData = [];
 
-    // Create one category per lawyer
     for (let i = 0; i < totalPoints; i++) {
       const point = { x: i };
       bookings.forEach((booking, index) => {
